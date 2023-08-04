@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-KCBC_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+KCBC_DIR="${HOME}/.config/kcbc"
 
 # ******************************************************************************
 # * Options                                                                    *
@@ -49,5 +49,6 @@ fi
 
 source "${KCBC_DIR}/aliases/aliases.bash"
 
-source "${KCBC_DIR}/modules/fzf.bash"
-source "${KCBC_DIR}/modules/zoxide.bash"
+for module in "${KCBC_DIR}"/modules/*.bash; do
+	source "$module"
+done
