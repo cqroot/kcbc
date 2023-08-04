@@ -1,0 +1,17 @@
+commit:
+  scopes:
+  enable-scope: false
+  enable-body: false
+  enable-footer: false
+  message-template: "{{.Type}} {{if .Scope}}({{.Scope}}): {{end}}{{.Summary}}"
+  types:
+    - text: ✨
+      note: "feat: A new feature"
+    - text: 🐛
+      note: "fix: A bug fix"
+    - text: 🔧
+      note: "build: Changes that affect the build system or external dependencies"
+    - text: 📝
+      note: "docs: Documentation only changes"
+    - text: 🎨
+      note: "refactor: A code change that neither fixes a bug nor adds a feature"
