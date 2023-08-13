@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-KCBC_DIR="${HOME}/.config/kcbc"
+KEITHBASH_DIR="${HOME}/.config/KEITHBASH"
 
 # ******************************************************************************
 # * Options                                                                    *
@@ -47,8 +47,10 @@ fi
 # NPM
 # export NODE_OPTIONS=--openssl-legacy-provider
 
-source "${KCBC_DIR}/aliases/aliases.bash"
+source "${KEITHBASH_DIR}/aliases/aliases.bash"
 
-for module in "${KCBC_DIR}"/modules/*.bash; do
+for module in "${KEITHBASH_DIR}"/modules/*.bash; do
 	source "$module"
 done
+
+export DELTA_PAGER="less $LESS"

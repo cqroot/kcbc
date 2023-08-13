@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-KCBC_DIR="${HOME}/.config/kcbc"
+KEITHBASH_DIR="${HOME}/.config/keithbash"
 
-echo "source \"${KCBC_DIR}/main.bash\"" >>"$HOME/.bashrc"
+echo "source \"${KEITHBASH_DIR}/main.bash\"" >>"$HOME/.bashrc"

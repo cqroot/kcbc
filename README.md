@@ -1,11 +1,11 @@
-# KCBC
+# Keith Bash
 
 Keith Chu's Bash Configuration.
 
 ## Installation
 
 ```bash
-git clone https://github.com/cqroot/kcbc ~/.config/kcbc
+git clone https://github.com/cqroot/keithbash ~/.config/keithbash
 
-bash ~/.config/kcbc/install.bash
+bash ~/.config/keithbash/install.bash
 ```
