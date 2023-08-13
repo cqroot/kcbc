@@ -7,5 +7,5 @@ Keith Chu's Bash Configuration.
 ```bash
 git clone https://github.com/cqroot/keithbash ~/.config/keithbash
 
-bash ~/.config/keithbash/install.bash
+bash ~/.config/keithbash/install.sh
 ```

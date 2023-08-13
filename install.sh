@@ -2,4 +2,4 @@
 
 KEITHBASH_DIR="${HOME}/.config/keithbash"
 
-echo "source \"${KEITHBASH_DIR}/main.bash\"" >>"$HOME/.bashrc"
+echo "source \"${KEITHBASH_DIR}/main.sh\"" >>"$HOME/.bashrc"

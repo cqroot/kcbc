@@ -47,9 +47,9 @@ fi
 # NPM
 # export NODE_OPTIONS=--openssl-legacy-provider
 
-source "${KEITHBASH_DIR}/aliases/aliases.bash"
+source "${KEITHBASH_DIR}/aliases/aliases.sh"
 
-for module in "${KEITHBASH_DIR}"/modules/*.bash; do
+for module in "${KEITHBASH_DIR}"/modules/*.sh; do
 	source "$module"
 done
 
