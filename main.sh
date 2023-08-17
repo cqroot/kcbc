@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-KEITHBASH_DIR="${HOME}/.config/KEITHBASH"
+KEITHBASH_DIR="${HOME}/.config/keithbash"
 
 # ******************************************************************************
 # * Options                                                                    *
