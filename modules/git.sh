@@ -4,6 +4,10 @@ if ! command -v git >/dev/null; then
 	return
 fi
 
+if [ -f "/usr/share/git/git-prompt.sh" ]; then
+	source "/usr/share/git/git-prompt.sh"
+fi
+
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
