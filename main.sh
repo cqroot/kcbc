@@ -47,6 +47,7 @@ fi
 # NPM
 # export NODE_OPTIONS=--openssl-legacy-provider
 
+source "${KEITHBASH_DIR}/functions.sh"
 source "${KEITHBASH_DIR}/aliases/aliases.sh"
 
 for module in "${KEITHBASH_DIR}"/modules/*.sh; do

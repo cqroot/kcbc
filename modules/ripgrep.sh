@@ -4,8 +4,6 @@ if ! command -v rg >/dev/null; then
 	return
 fi
 
-case "$(uname -s)" in
-CYGWIN* | MINGW* | MSYS*)
+if kb_is_windows; then
 	alias rg="rg --path-separator '//'"
-	;;
-esac
+fi
