@@ -22,11 +22,4 @@ bind "set bell-style none"
 # # pressing tab will automatically complete the first item
 # bind '"\C-i" menu-complete'
 
-# ******************************************************************************
-# * Envs                                                                       *
-# ******************************************************************************
-export EDITOR='vim'
-export VISUAL='vim'
-export PAGER='less'
-
 export HISTCONTROL=ignoreboth:erasedups
