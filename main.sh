@@ -18,9 +18,9 @@ if [ -f "/usr/share/bash-completion/bash_completion" ]; then
 	source "/usr/share/bash-completion/bash_completion"
 fi
 
-export PATH=$GOPATH/bin:$PATH
-if [ -d "$HOME/.bin" ]; then
-	PATH="$HOME/.bin:$PATH"
+export PATH=${KEITHBASH_DIR}/bin:${GOPATH}/bin:${PATH}
+if [ -d "${HOME}/.bin" ]; then
+	PATH="${HOME}/.bin:${PATH}"
 fi
 
 # NPM
@@ -32,7 +32,7 @@ for module in "${KEITHBASH_DIR}"/modules/*.sh; do
 	source "${module}"
 done
 
-export DELTA_PAGER="less $LESS"
+export DELTA_PAGER="less ${LESS}"
 
 PS1='\[\033[01;32m\]➜ \[\033[01;37m\] \W\[\033[01;32m\]$(__git_ps1) »\[\033[00m\] '
 
