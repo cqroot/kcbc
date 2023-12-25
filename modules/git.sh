@@ -4,9 +4,8 @@ if ! command -v git >/dev/null; then
 	return
 fi
 
-if [ -f "/usr/share/git/git-prompt.sh" ]; then
-	source "/usr/share/git/git-prompt.sh"
-fi
+CURR_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+source "${CURR_DIR}/git/git-prompt.sh"
 
 alias gs='git status'
 alias ga='git add'
