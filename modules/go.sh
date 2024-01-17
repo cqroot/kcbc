@@ -5,3 +5,4 @@ if ! command -v go >/dev/null; then
 fi
 
 export GOPATH=$HOME/go
+export PATH=${GOPATH}/bin:${PATH}

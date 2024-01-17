@@ -18,7 +18,7 @@ if [ -f "/usr/share/bash-completion/bash_completion" ]; then
 	source "/usr/share/bash-completion/bash_completion"
 fi
 
-export PATH=${KEITHBASH_DIR}/bin:${GOPATH}/bin:${PATH}
+export PATH=${KEITHBASH_DIR}/bin:${PATH}
 if [ -d "${HOME}/.bin" ]; then
 	PATH="${HOME}/.bin:${PATH}"
 fi
