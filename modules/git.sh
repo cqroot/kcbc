@@ -8,6 +8,7 @@ CURR_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 source "${CURR_DIR}/git/git-prompt.sh"
 
 alias gs='git status'
+alias gsa='git status --untracked-files'
 alias ga='git add'
 alias gc='git commit'
 alias gb='git branch -vv'

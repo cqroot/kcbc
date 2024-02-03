@@ -47,3 +47,7 @@ fi
 if command -v gitui >/dev/null; then
 	alias gu=gitui
 fi
+
+if command -v lazygit >/dev/null; then
+	alias lg=lazygit
+fi
