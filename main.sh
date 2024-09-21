@@ -4,7 +4,6 @@
 KEITHBASH_DIR="${HOME}/.config/keithbash"
 source "${KEITHBASH_DIR}/functions.sh"
 
-
 # ******************************************************************************
 # * Envs                                                                       *
 # ******************************************************************************
@@ -15,12 +14,18 @@ export PAGER='less'
 # ******************************************************************************
 
 if [ -f "/usr/share/bash-completion/bash_completion" ]; then
-	source "/usr/share/bash-completion/bash_completion"
+    source "/usr/share/bash-completion/bash_completion"
 fi
 
 export PATH=${KEITHBASH_DIR}/bin:${PATH}
+
 if [ -d "${HOME}/.bin" ]; then
-	PATH="${HOME}/.bin:${PATH}"
+    PATH="${HOME}/.bin:${PATH}"
+fi
+
+if command -v cargo >/dev/null; then
+    # for cargo
+    export PATH=${HOME}/.cargo/bin:${PATH}
 fi
 
 # NPM
@@ -29,7 +34,7 @@ fi
 source "${KEITHBASH_DIR}/aliases/aliases.sh"
 
 for module in "${KEITHBASH_DIR}"/modules/*.sh; do
-	source "${module}"
+    source "${module}"
 done
 
 export DELTA_PAGER="less ${LESS}"
